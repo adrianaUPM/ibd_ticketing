@@ -1,0 +1,10 @@
+version: "3:8"
+
+services:
+  buyer1:
+    image: idb/ticketing
+    deploy:
+      mode: replicated
+      replicas: 5
+    volumes:
+      - ./data:/mnt/shared-data  
